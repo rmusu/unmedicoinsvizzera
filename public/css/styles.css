@@ -8,6 +8,7 @@
 
 .container-fluid {
   padding: 2% 10%;
+  height: 30em;
 }
 
   h1 {
@@ -118,7 +119,7 @@
   height:auto;
   position:relative;
   margin-left:43.75em;
-  margin-top:-5em;
+  margin-top:-4em;
   margin-bottom:-31.25em;
   z-index:2}
 
