@@ -1,11 +1,13 @@
 #title{
+
   background-color: #53C3CB;
   color: #ffffff;
 
 }
 
+
 .container-fluid {
-  padding: 3% 15%;
+  padding: 2% 10%;
 }
 
   h1 {
@@ -42,21 +44,23 @@
   }
 
   .navbar{
+    width: 90%;
+    padding: 0 0 2.5rem 0;
 
-    padding: 0 0 4.5rem;
   }
   .navbar-brand {
     font-size: 2rem;
+
 
   }
 
   .nav-item {
 
+
   }
 
   .nav-link {
     font-size: 1.2rem;
-
   }
 
   #features {
@@ -113,9 +117,9 @@
   width:10%;
   height:auto;
   position:relative;
-  margin-left:700px;
-  margin-top:-80px;
-  margin-bottom:-500px;
+  margin-left:43.75em;
+  margin-top:-5em;
+  margin-bottom:-31.25em;
   z-index:2}
 
   #contatta{
@@ -126,7 +130,7 @@
 
 
   .container {
-    height: 100px;
+    height: 6.25em;
     position: relative;
 
   }
