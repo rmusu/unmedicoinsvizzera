@@ -1,14 +1,29 @@
+@media (max-width:1000px) {
+  img#image{
+    display: none;
+  }
+}
+
+@media (max-width:992px) {
+  #main-menu{
+    display: none;
+  }
+}
+
+
 #title{
 
   background-color: #53C3CB;
   color: #ffffff;
+  height:90%;
+  padding:0% 0% 0% 00%;
 
 }
 
 
 .container-fluid {
-  padding: 2% 10%;
-  height: 30em;
+  padding: 5% 10% 5%;
+  height: 100%;
 }
 
   h1 {
@@ -46,7 +61,7 @@
 
   .navbar{
     width: 90%;
-    padding: 0 0 2.5rem 0;
+    padding: 0 0 5% 0;
 
   }
   .navbar-brand {
@@ -65,7 +80,7 @@
   }
 
   #features {
-    padding: 7% 15%;
+    padding: 7% 10%;
     background-color: #d3d3d3;
   }
 
@@ -97,10 +112,11 @@
 
 
   #Aboutme {
-    padding: 7%;
+    padding: 7% 10%;
     background-color: #F7E188;
     color: #999999;
     text-align: left;
+    height:100%
   }
 
   .feature-box {
@@ -116,15 +132,15 @@
 
 #image{
   height:auto;
-  width:200%;
+  width:210%;
   position:relative;
-  margin-left:-15.75em;
-  margin-top:-18em;
-  margin-bottom:-30.25em;
+  margin-left:-9.75em;
+  margin-top:-25em;
+  margin-bottom:-34.25em;
   z-index:2}
 
   #contatta{
-    padding: 7% 20%;
+    padding: 7% 10%;
     background-color:#ffffff;
     color:#999999;
   }
@@ -146,7 +162,7 @@
   }
 
   #footer{
-    padding: 2% 2%;
+    padding: 2% 7%;
     background-color:#3d3d3d;
     color:#ffffff;
   }
