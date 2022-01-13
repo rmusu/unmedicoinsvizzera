@@ -4,6 +4,12 @@
   }
 }
 
+@media (min-width:400px) {
+  img#imagephone{
+    display: none;
+  }
+}
+
 @media (max-width:960px) {
   #main-menu{
     display: none;
@@ -139,6 +145,14 @@
   margin-bottom:-34.25em;
   z-index:2}
 
+  #imagephone{
+    height:auto;
+    width:1%;
+    position:relative;
+    margin-left:-9.75em;
+    margin-top:-25em;
+    margin-bottom:-34.25em;
+    z-index:2}
 
   #contatta{
     padding: 7% 10%;
