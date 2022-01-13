@@ -4,7 +4,7 @@
   }
 }
 
-@media (max-width:992px) {
+@media (max-width:960px) {
   #main-menu{
     display: none;
   }
@@ -22,7 +22,7 @@
 
 
 .container-fluid {
-  padding: 5% 10% 5%;
+  padding: 5% 7% 7%;
   height: 100%;
 }
 
@@ -138,6 +138,7 @@
   margin-top:-25em;
   margin-bottom:-34.25em;
   z-index:2}
+
 
   #contatta{
     padding: 7% 10%;
