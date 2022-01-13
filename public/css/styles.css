@@ -4,11 +4,7 @@
   }
 }
 
-@media (min-width:480px) {
-  #imagephone{
-    display: none;
-  }
-}
+
 
 @media (max-width:960px) {
   #main-menu{
