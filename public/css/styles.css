@@ -115,8 +115,8 @@
 
 
 #image{
-  height:550px;
-  width:550px;
+  height:auto;
+  width:200%;
   position:relative;
   margin-left:-15.75em;
   margin-top:-18em;
