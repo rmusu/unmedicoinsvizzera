@@ -169,3 +169,11 @@
   .videochiamata{
     color: #d9534f;
   }
+  .costo{
+    text-align: center;
+    font-family: 'Days One';
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #d9534f;
+  }
