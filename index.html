@@ -13,7 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script rel="stylesheet" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link href="css/styles.css" rel="stylesheet">
-  <link href="favicon.ico" rel="icon">
+  <!--<link href="favicon.ico" rel="icon">-->
 </head>
 
 <body>
@@ -22,7 +22,15 @@
     <div class="container-fluid">
 
     <!-- Nav Bar -->
+    <div class="btnLng">
 
+    <button id="btnLngEN" onclick="changeLanguage('eng')">
+      EN
+    </button>
+    <button id="btnLngIT" onclick="changeLanguage('it')">
+      IT
+    </button>
+  </div>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="col-lg-6">
         <img class="logo" src="images/logo.png" alt="iphone-mockup">
@@ -32,15 +40,19 @@
         <ul id = main_menu class="navbar-nav ml-auto">
 
             <li class="nav-item">
-                <a class="nav-link" href="#image">Chi sono</a>
+                <a class="nav-link" id="firstMenu" href="#image">Chi sono</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contatta">Contattami</a>
+                <a class="nav-link" id="secondMenu" href="https://ilfrancesemedico.thinkific.com">I miei corsi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#features">Seguimi</a>
+                <a class="nav-link" id="thirdMenu" href="#contatta">Contattami</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="fourthMenu" href="#features">Seguimi</a>
             </li>
         </ul>
+
      </div>
     </nav>
 
@@ -56,7 +68,7 @@
 
 
       <div class="col-md-12">
-        <h1>Lungimiranza e programmazione</h1>,<h2>le chiavi per il tuo successo in Svizzera</h2>
+        <h1 id="foresight">Lungimiranza e programmazione,</h1><h2 id="keys">le chiavi per il tuo successo in Svizzera</h2>
 
 
       </div>
@@ -67,11 +79,12 @@
 
 
   <section id="Aboutme" class="c">
+
     <div class="row">
 
       <div class="col-md-6">
-        <h4 class="chisono">Ciao! Sono Stefano e lavoro come medico in Svizzera.<br><br> Dopo aver girato tra l’Europa e l’Africa, mi trovo da 4 anni a Ginevra.<br><br>
-          Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.
+        <h4 class="chisono" id="firstParagraph">Ciao! Sono Stefano e lavoro come medico in Svizzera.</h4><br><br> <h4 class="chisono" id="secondParagraph">Dopo aver girato tra l’Europa e l’Africa, mi trovo da 4 anni a Ginevra.</h4><br><br>
+          <h4 class="chisono" id="thirdParagraph">Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.</h4>
         </div>
         <div class="col-sm-3"></div>
           <div class="diving col-sm-3"><img id="image" src="images/ste-modified.png">
@@ -80,8 +93,8 @@
         </div>
             <div class="row">
               <div class="col-md-12 col-lg-6">
-                <h4 class="chisono">
-                  <br>Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.
+                <br><h4 class="chisono" id="fourthParagraph">
+                  Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.</h4>
                 </div>
                 <div class="col-md-0 col-lg-6"></div>
                 <div class="col-md-0 col-lg-6" ></div>
@@ -92,8 +105,8 @@
           <div class="row">
 
             <div class="col-md-12 col-lg-6">
-        <h4 class="chisono">
-          <br>
+        <br><h4 class="chisono" id="fifthParagraph">
+
           Tutte queste domande mi hanno spinto ad iniziare questo progetto,
           per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.<br>
 
@@ -180,7 +193,7 @@
 
     <div class="col-sm-12">
 
-          <h2>Stai progettando di trasferirti in Svizzera? <br>Hai bisogno di una
+          <h2 id="question">Stai progettando di trasferirti in Svizzera? <br>Hai bisogno di una
           risposta dettagliata per la tua situazione?</h2>
 
 
@@ -192,9 +205,9 @@
       <div class="col-sm-12">
 
 
-            <h1 class="videochiamata">Contattami per una consulenza di 30 minuti in videochiamata</h1>
+            <h1 class="videochiamata" id="consultancy">Contattami per una consulenza di 30 minuti in videochiamata</h1>
             <br>
-            <p class="costo">il costo del servizio è di 75€</p>
+            <p class="costo" id="price">il costo del servizio è di 75€</p>
 
       </div>
 
@@ -203,7 +216,7 @@
   <br>
     <div class="container">
       <div class="center">
-        <a style="text-decoration:none" href= "https://us5.list-manage.com/contact-form?u=ec21434926e3563904dd6a452&form_id=a93cea29b0f9adb6dca3ec3715219bbd"><button type="button" class="btn btn-danger" color="red">Vai al form</button></a>
+        <a style="text-decoration:none" href= "https://us5.list-manage.com/contact-form?u=ec21434926e3563904dd6a452&form_id=a93cea29b0f9adb6dca3ec3715219bbd"><button type="button" class="btn btn-danger" color="red" id="formButton">Vai al form</button></a>
       </div>
     </div>
 
@@ -221,14 +234,12 @@
       <div class="feature-box col-lg-6">
       <a style="text-decoration:none" href = "https://www.instagram.com/unmedicoinsvizzera/"><i class="icon1 fab fa-instagram fa-5x"></i></a>
             <h3>Instagram</h3>
-            <p>Ogni settimana un quiz di medicina tropicale.</p>
       </div>
 
       <div class="feature-box col-lg-6">
 
       <a style="text-decoration:none" href = "https://www.youtube.com/channel/UC3RS3zXa8CjFlPhwh70QPQQ/featured"><i class="icon2 fab fa-youtube fa-5x"></i></a>
             <h3>YouTube</h3>
-            <p>Tutto sul sistema di formazione elvetico.</p>
       </div>
     </section>
 
@@ -252,7 +263,100 @@
 
   </footer>
 
-<script src="index.js" charset="utf-8"></script>
+<script>
+
+function changeLanguage(lang) {
+  location.hash = lang;
+  location.reload();
+}
+
+  var language = {
+    eng:{
+      firstMenu: "About",
+      secondMenu: "Courses",
+      thirdMenu: "Contact me",
+      fourthMenu: "Follow me",
+      foresight: "FORESIGHT AND PLANNING,",
+      keys: "The keys to your success in Switzerland",
+      firstParagraph: "Ciao! Buongiorno a tutti! I’m Stefano. I work as a doctor in Switzerland.",
+      secondParagraph:"So many colleagues over the past years have asked me for advice and personal opinions about my life as a doctor abroad, how to find a job as a doctor in Switzerland and especially, how to start the medical residency program in this country.",
+      thirdParagraph:"After several experiences around Europe and Africa, right now I’m based in Geneva since 2018.",
+      fourthParagraph:"At first glance, the Swiss medical residency program and its working environment are extremely complicated to understand.",
+      fifthParagraph:"Over the years, I learned to navigate the Swiss system and gained the experience necessary to help others understand the steps to come here.",
+      question:"Are you planning to move to Switzerland? Do you need a tailored answer to your own situation?",
+      consultancy:"Contact me for a consultancy videocall of 30 minutes",
+      price:"The service fee is €75.",
+      formButton:"Go to the form",
+      btnLng:"EN"
+    },
+    it: {
+      firstMenu: "Chi sono",
+      secondMenu: "I miei corsi",
+      thirdMenu: "Contattami",
+      fourthMenu: "Seguimi",
+      foresight: "Lungimiranza e programmazione,",
+      keys: "le chiavi per il tuo successo in Svizzera",
+      firstParagraph:"Ciao! Sono Stefano e lavoro come medico in Svizzera.",
+      secondParagraph:"Dopo aver girato tra l’Europa e l’Africa, mi trovo da 4 anni a Ginevra.",
+      thirdParagraph:"Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.",
+      fourthParagraph:"Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.",
+      fifthParagraph:"Tutte queste domande mi hanno spinto ad iniziare questo progetto, per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.",
+      question:"Stai progettando di trasferirti in Svizzera? Hai bisogno di una risposta dettagliata per la tua situazione?",
+      consultancy:"Contattami per una consulenza di 30 minuti in videochiamata.",
+      price:"il costo del servizio è di 75€.",
+      formButton:"Vai al form",
+      btnLng:"IT"
+
+
+    }
+
+
+  };
+
+  if (window.location.hash){
+    if(window.location.hash === "#eng" ){
+      firstMenu.textContent = language.eng.firstMenu,
+      secondMenu.textContent = language.eng.secondMenu,
+      thirdMenu.textContent = language.eng.thirdMenu,
+      fourthMenu.textContent = language.eng.fourthMenu,
+      foresight.textContent = language.eng.foresight;
+      keys.textContent = language.eng.keys;
+      firstParagraph.textContent = language.eng.firstParagraph;
+      secondParagraph.textContent = language.eng.secondParagraph;
+      thirdParagraph.textContent = language.eng.thirdParagraph;
+      fourthParagraph.textContent = language.eng.fourthParagraph;
+      fifthParagraph.textContent = language.eng.fifthParagraph;
+      question.textContent = language.eng.question;
+      consultancy.textContent = language.eng.consultancy;
+      price.textContent = language.eng.price;
+      formButton.textContent = language.eng.formButton;
+      btnLng.textContent = language.eng.btnLng;
+    }else{
+      firstMenu.textContent = language.it.firstMenu,
+      secondMenu.textContent = language.it.secondMenu,
+      thirdMenu.textContent = language.it.thirdMenu,
+      fourthMenu.textContent = language.it.fourthMenu,
+      foresight.textContent = language.it.foresight;
+      keys.textContent= language.it.keys
+      foresight.textContent = language.it.foresight;
+      keys.textContent = language.it.keys;
+      firstParagraph.textContent = language.it.firstParagraph;
+      secondParagraph.textContent = language.it.secondParagraph;
+      thirdParagraph.textContent = language.it.thirdParagraph;
+      fourthParagraph.textContent = language.it.fourthParagraph;
+      fifthParagraph.textContent = language.it.fifthParagraph;
+      question.textContent = language.it.question;
+      consultancy.textContent = language.it.consultancy;
+      price.textContent = language.it.price;
+      formButton.textContent = language.it.formButton;
+      btnLng.textContent = language.it.btnLng;
+
+    }
+
+
+  };
+
+</script>
 </body>
 
 </html>

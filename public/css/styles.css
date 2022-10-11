@@ -104,6 +104,10 @@
     color: black;
   }
 
+  .btnLngIT{
+    color:
+  }
+
 
 
 
@@ -176,4 +180,13 @@
     line-height: 1.5;
     text-align: center;
     color: #d9534f;
+  }
+  #btnLngEN{
+    margin-left: 92%;
+    border-color: #F7E188;
+    color: #d9534f
+  }
+  #btnLngIT{
+    border-color: #F7E188;
+    color: #d9534f
   }
