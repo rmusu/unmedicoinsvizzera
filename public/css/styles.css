@@ -182,11 +182,32 @@
     color: #d9534f;
   }
   #btnLngEN{
-    margin-left: 92%;
+    margin-left: 87%;
     border-color: #F7E188;
     color: #d9534f
   }
   #btnLngIT{
     border-color: #F7E188;
     color: #d9534f
+  }
+
+  #testimonials {
+    margin-top: 5%;
+    text-align: center;
+    background-color: #d9534f;
+    color: #ffffff;
+    border-radius:2%;
+    align: center;
+    font-style: italic;
+  }
+
+  .testimonial-image{
+    width: 12%;
+    border-radius: 100%;
+    margin: 20px;
+
+  }
+
+  .carousel-item{
+    padding: 7% 15%;
   }
