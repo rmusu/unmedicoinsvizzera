@@ -213,19 +213,19 @@
   }
 /* Stili per la sezione IBANI */
 .ibani-section {
-  background-color: #f8f9fa; /* Stesso colore di #features */
+  background-color: #d3d3d3; /* Stesso colore di #features */
   padding: 20px 0;
   text-align: center;
 }
 
 .ibani-section h2 {
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 20px;
   color: #333;
 }
 
 .ibani-logo {
-  max-width: 100px;
+  max-width: 50px;
   height: auto;
   margin-top: 10px;
 }
