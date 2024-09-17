@@ -211,27 +211,32 @@
   .carousel-item{
     padding: 7% 15%;
   }
-#ibani-partner {
-  background-color: #f9f9f9; /* Or whatever background you prefer */
-  padding: 50px 0; /* Adds some space around the section */
-  text-align: center; /* Centers the content */
+#features {
+  background-color: #f8f9fa;
+  padding: 50px 0;
 }
 
-#ibani-partner h2 {
-  font-family: 'Days One', sans-serif; /* Matches the font used for titles */
-  font-size: 2rem; /* Adjust to match other section headers */
-  color: #333; /* Replace with the color you are using for text */
-  margin-bottom: 20px;
-}
-
-#ibani-partner p {
-  font-family: 'Montserrat', sans-serif; /* Matches the body text font */
-  font-size: 1.2rem;
-  color: #666; /* Same as used for the text elsewhere */
-  margin-bottom: 15px;
-}
-
-#ibani-partner img {
-  max-width: 200px; /* Adjust the size of the IBANI logo */
+.feature-box h3 {
+  font-size: 24px;
   margin-top: 20px;
+  color: #333;
+}
+
+/* Stili per la sezione IBANI */
+.ibani-section {
+  background-color: #f8f9fa; /* Stesso colore di #features */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.ibani-section h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.ibani-logo {
+  max-width: 100px;
+  height: auto;
+  margin-top: 10px;
 }
