@@ -211,21 +211,17 @@
   .carousel-item{
     padding: 7% 15%;
   }
-/* Stili per la sezione IBANI */
-.ibani-section {
-  background-color: #d3d3d3; /* Stesso colore di #features */
-  padding: 20px 0;
-  text-align: center;
-}
-
-.ibani-section h2 {
-  font-size: 18px;
-  margin-top: 20px;
+/* For the IBANI section */
+#ibaniTitle {
+  font-size: 16px; /* Reduce the font size */
+  margin-bottom: 20px; /* Add margin below the title */
   color: #333;
 }
 
+/* Adjust the logo size and margins */
 .ibani-logo {
-  max-width: 50px;
+  max-width: 80px; /* Smaller logo */
   height: auto;
-  margin-top: 10px;
+  margin: 20px auto; /* Add margin around the logo */
+  display: block; /* Center the logo */
 }
