@@ -211,17 +211,22 @@
   .carousel-item{
     padding: 7% 15%;
   }
-/* For the IBANI section */
-#ibaniTitle {
-  font-size: 16px; /* Reduce the font size */
-  margin-bottom: 20px; /* Add margin below the title */
-  color: #333;
+/* Match the background color of the Instagram and YouTube section */
+#ibani-partner {
+  background-color: #e0e0e0; /* Change to the desired color */
+  padding: 20px 0;
 }
 
-/* Adjust the logo size and margins */
+/* Make the IBANI logo smaller and add margin */
 .ibani-logo {
-  max-width: 80px; /* Smaller logo */
+  max-width: 80px; /* Adjust the logo size */
   height: auto;
-  margin: 20px auto; /* Add margin around the logo */
-  display: block; /* Center the logo */
+  margin-right: 20px; /* Add margin to the right for spacing */
+  display: inline-block; /* Keep the logo inline with the text */
+}
+
+/* Style the heading */
+#ibaniTitle {
+  font-size: 16px; /* Smaller font size */
+  color: #333;
 }
