@@ -362,17 +362,6 @@ tempo e anche denaro.
 </section>
 
 
-<section id="ibani-partner">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h2 id="ibaniTitle">Our trusted partner: IBANI 😛</h2>
-      <a href="https://www.ibani.com/" target="_blank">
-        <img src="images/ibani-chf-eur-thumbnail.png" alt="IBANI logo" style="max-width:200px;">
-      </a>
-    </div>
-  </div>
-</section>
-
   <section id="features">
     <div class="row">
 
@@ -396,113 +385,144 @@ tempo e anche denaro.
 -->
 
 
+<section id="ibani-partner">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 id="ibaniTitle">Our trusted partner: IBANI</h2>
+      <a href="https://www.ibani.com/" target="_blank">
+        <img src="images/logoibani.png" alt="IBANI logo" style="max-width:200px;">
+      </a>
+    </div>
+  </div>
+</section>
 
 
+<!-- ...il resto del tuo codice HTML... -->
 
-  <!-- Footer -->
+<!-- Footer -->
+<footer id="footer">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 id="ibaniTitle">Our trusted partner</h2>
+      <a href="https://www.ibani.com/" target="_blank">
+        <img src="images/ibani-chf-eur-thumbnail.png" alt="IBANI logo" style="max-width:200px;">
+      </a>
+    </div>
+  </div>
 
-  <footer id="footer">
+  <p>© Copyright 2022 | Un medico in Svizzera</p>
+</footer>
 
-    <p>© Copyright 2022 | Un medico in Svizzera</p>
-
-  </footer>
-
+<!-- Script JavaScript -->
 <script>
+  // Ottieni gli elementi dal DOM
+  var ibaniTitle = document.getElementById('ibaniTitle');
+  var firstMenu = document.getElementById('firstMenu');
+  var secondMenu = document.getElementById('secondMenu');
+  var thirdMenu = document.getElementById('thirdMenu');
+  var fourthMenu = document.getElementById('fourthMenu');
+  var foresight = document.getElementById('foresight');
+  var keys = document.getElementById('keys');
+  var firstParagraph = document.getElementById('firstParagraph');
+  var secondParagraph = document.getElementById('secondParagraph');
+  var thirdParagraph = document.getElementById('thirdParagraph');
+  var fourthParagraph = document.getElementById('fourthParagraph');
+  var fifthParagraph = document.getElementById('fifthParagraph');
+  var question = document.getElementById('question');
+  var consultancy = document.getElementById('consultancy');
+  var price = document.getElementById('price');
+  var formButton = document.getElementById('formButton');
+  var btnLngEN = document.getElementById('btnLngEN');
+  var btnLngIT = document.getElementById('btnLngIT');
 
-function changeLanguage(lang) {
-  location.hash = lang;
-  location.reload();
-}
-
- var language = {
-  eng: {
-    firstMenu: "About",
-    secondMenu: "Courses",
-    thirdMenu: "Contact me",
-    fourthMenu: "Follow me",
-    foresight: "FORESIGHT AND PLANNING,",
-    keys: "The keys to your success in Switzerland",
-    firstParagraph: "Ciao! Buongiorno a tutti! I’m Stefano. I work as a doctor in Switzerland.",
-    secondParagraph: "So many colleagues over the past years have asked me for advice and personal opinions about my life as a doctor abroad, how to find a job as a doctor in Switzerland and especially, how to start the medical residency program in this country.",
-    thirdParagraph: "After several experiences around Europe and Africa, right now I’m based in Geneva since 2018.",
-    fourthParagraph: "At first glance, the Swiss medical residency program and its working environment are extremely complicated to understand.",
-    fifthParagraph: "Over the years, I learned to navigate the Swiss system and gained the experience necessary to help others understand the steps to come here.",
-    question: "Are you planning to move to Switzerland? Do you need a tailored answer to your own situation?",
-    consultancy: "Contact me for a 30 minute video call",
-    price: "The service fee is €100.",
-    formButton: "Go to the form",
-    btnLng: "EN",
-    ibaniTitle: "Our trusted partner: IBANI 😛",
-   
-  },
-  it: {
-    firstMenu: "Chi sono",
-    secondMenu: "I miei corsi",
-    thirdMenu: "Contattami",
-    fourthMenu: "Seguimi",
-    foresight: "Lungimiranza e programmazione,",
-    keys: "le chiavi per il tuo successo in Svizzera",
-    firstParagraph: "Ciao! Sono Stefano e lavoro come medico in Svizzera.",
-    secondParagraph: "Dopo aver girato tra l’Europa e l’Africa, mi trovo da 4 anni a Ginevra.",
-    thirdParagraph: "Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.",
-    fourthParagraph: "Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.",
-    fifthParagraph: "Tutte queste domande mi hanno spinto ad iniziare questo progetto, per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.",
-    question: "Stai progettando di trasferirti in Svizzera? Hai bisogno di una risposta dettagliata per la tua situazione?",
-    consultancy: "Contattami per una consulenza di 30 minuti in videochiamata.",
-    price: "il costo del servizio è di 100€.",
-    formButton: "Vai al form",
-    btnLng: "IT",
-	ibaniTitle: "Il nostro partner di fiducia: IBANI 😛",
-
+  // La tua funzione per cambiare lingua
+  function changeLanguage(lang) {
+    location.hash = lang;
+    location.reload();
   }
-};
 
-// Update your existing `changeLanguage` function to switch the IBANI section content:
-if (window.location.hash) {
-  if (window.location.hash === "#eng") {
-    firstMenu.textContent = language.eng.firstMenu;
-    secondMenu.textContent = language.eng.secondMenu;
-    thirdMenu.textContent = language.eng.thirdMenu;
-    fourthMenu.textContent = language.eng.fourthMenu;
-    foresight.textContent = language.eng.foresight;
-    keys.textContent = language.eng.keys;
-    firstParagraph.textContent = language.eng.firstParagraph;
-    secondParagraph.textContent = language.eng.secondParagraph;
-    thirdParagraph.textContent = language.eng.thirdParagraph;
-    fourthParagraph.textContent = language.eng.fourthParagraph;
-    fifthParagraph.textContent = language.eng.fifthParagraph;
-    question.textContent = language.eng.question;
-    consultancy.textContent = language.eng.consultancy;
-    price.textContent = language.eng.price;
-    formButton.textContent = language.eng.formButton;
-    btnLng.textContent = language.eng.btnLng;
-ibaniTitle.textContent = language.eng.ibaniTitle;
+  var language = {
+    eng: {
+      firstMenu: "About",
+      secondMenu: "Courses",
+      thirdMenu: "Contact me",
+      fourthMenu: "Follow me",
+      foresight: "FORESIGHT AND PLANNING,",
+      keys: "The keys to your success in Switzerland",
+      firstParagraph: "Ciao! Buongiorno a tutti! I’m Stefano. I work as a doctor in Switzerland.",
+      secondParagraph: "So many colleagues over the past years have asked me for advice and personal opinions about my life as a doctor abroad, how to find a job as a doctor in Switzerland and especially, how to start the medical residency program in this country.",
+      thirdParagraph: "After several experiences around Europe and Africa, right now I’m based in Geneva since 2018.",
+      fourthParagraph: "At first glance, the Swiss medical residency program and its working environment are extremely complicated to understand.",
+      fifthParagraph: "Over the years, I learned to navigate the Swiss system and gained the experience necessary to help others understand the steps to come here.",
+      question: "Are you planning to move to Switzerland? Do you need a tailored answer to your own situation?",
+      consultancy: "Contact me for a 30 minute video call",
+      price: "The service fee is €100.",
+      formButton: "Go to the form",
+      btnLng: "EN",
+      ibaniTitle: "Our trusted partner",
+    },
+    it: {
+      firstMenu: "Chi sono",
+      secondMenu: "I miei corsi",
+      thirdMenu: "Contattami",
+      fourthMenu: "Seguimi",
+      foresight: "Lungimiranza e programmazione,",
+      keys: "le chiavi per il tuo successo in Svizzera",
+      firstParagraph: "Ciao! Sono Stefano e lavoro come medico in Svizzera.",
+      secondParagraph: "Dopo aver girato tra l’Europa e l’Africa, mi trovo da 4 anni a Ginevra.",
+      thirdParagraph: "Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.",
+      fourthParagraph: "Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.",
+      fifthParagraph: "Tutte queste domande mi hanno spinto ad iniziare questo progetto, per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.",
+      question: "Stai progettando di trasferirti in Svizzera? Hai bisogno di una risposta dettagliata per la tua situazione?",
+      consultancy: "Contattami per una consulenza di 30 minuti in videochiamata.",
+      price: "il costo del servizio è di 100€.",
+      formButton: "Vai al form",
+      btnLng: "IT",
+      ibaniTitle: "Il nostro partner di fiducia",
+    }
+  };
 
-
-    
-  } else {
-    firstMenu.textContent = language.it.firstMenu;
-    secondMenu.textContent = language.it.secondMenu;
-    thirdMenu.textContent = language.it.thirdMenu;
-    fourthMenu.textContent = language.it.fourthMenu;
-    foresight.textContent = language.it.foresight;
-    keys.textContent = language.it.keys;
-    firstParagraph.textContent = language.it.firstParagraph;
-    secondParagraph.textContent = language.it.secondParagraph;
-    thirdParagraph.textContent = language.it.thirdParagraph;
-    fourthParagraph.textContent = language.it.fourthParagraph;
-    fifthParagraph.textContent = language.it.fifthParagraph;
-    question.textContent = language.it.question;
-    consultancy.textContent = language.it.consultancy;
-    price.textContent = language.it.price;
-    formButton.textContent = language.it.formButton;
-    btnLng.textContent = language.it.btnLng;
-	ibaniTitle.textContent = language.it.ibaniTitle;
+  // Funzione per aggiornare il contenuto in base alla lingua
+  if (window.location.hash) {
+    if (window.location.hash === "#eng") {
+      firstMenu.textContent = language.eng.firstMenu;
+      secondMenu.textContent = language.eng.secondMenu;
+      thirdMenu.textContent = language.eng.thirdMenu;
+      fourthMenu.textContent = language.eng.fourthMenu;
+      foresight.textContent = language.eng.foresight;
+      keys.textContent = language.eng.keys;
+      firstParagraph.textContent = language.eng.firstParagraph;
+      secondParagraph.textContent = language.eng.secondParagraph;
+      thirdParagraph.textContent = language.eng.thirdParagraph;
+      fourthParagraph.textContent = language.eng.fourthParagraph;
+      fifthParagraph.textContent = language.eng.fifthParagraph;
+      question.textContent = language.eng.question;
+      consultancy.textContent = language.eng.consultancy;
+      price.textContent = language.eng.price;
+      formButton.textContent = language.eng.formButton;
+      btnLngEN.textContent = language.eng.btnLng;
+      ibaniTitle.textContent = language.eng.ibaniTitle;
+    } else {
+      firstMenu.textContent = language.it.firstMenu;
+      secondMenu.textContent = language.it.secondMenu;
+      thirdMenu.textContent = language.it.thirdMenu;
+      fourthMenu.textContent = language.it.fourthMenu;
+      foresight.textContent = language.it.foresight;
+      keys.textContent = language.it.keys;
+      firstParagraph.textContent = language.it.firstParagraph;
+      secondParagraph.textContent = language.it.secondParagraph;
+      thirdParagraph.textContent = language.it.thirdParagraph;
+      fourthParagraph.textContent = language.it.fourthParagraph;
+      fifthParagraph.textContent = language.it.fifthParagraph;
+      question.textContent = language.it.question;
+      consultancy.textContent = language.it.consultancy;
+      price.textContent = language.it.price;
+      formButton.textContent = language.it.formButton;
+      btnLngIT.textContent = language.it.btnLng;
+      ibaniTitle.textContent = language.it.ibaniTitle;
+    }
   }
-}
-
-
 </script>
 </body>
-
 </html>
+
