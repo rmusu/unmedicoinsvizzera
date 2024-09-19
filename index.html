@@ -39,38 +39,44 @@
       IT
     </button>
   </div>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="col-lg-6">
-        <img class="logo" src="images/logo.png" alt="iphone-mockup">
-      </div>
+     <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="images/logo.png" alt="iphone-mockup" width="30" height="30">
+          </a>
 
-      <div class="col-lg-3 collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
-        <ul id = main_menu class="navbar-nav ml-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <li class="nav-item">
-                <a class="nav-link" id="firstMenu" href="#image">Chi sono</a>
-            </li>
-            <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="corsiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        I miei corsi
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="corsiDropdown">
-        <li><a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Corso 1</a></li>
-        <li><a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Corso 2</a></li>
-    </ul>
-</li>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#image">Chi sono</a>
+              </li>
 
-            <li class="nav-item">
-                <a class="nav-link" id="thirdMenu" href="#contatta">Contattami</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="fourthMenu" href="#features">Seguimi</a>
-            </li>
-        </ul>
+              <!-- Dropdown Menu for "I miei corsi" -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="corsiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  I miei corsi
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="corsiDropdown">
+                  <li><a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Corso 1</a></li>
+                  <li><a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Corso 2</a></li>
+                </ul>
+              </li>
 
-     </div>
-    </nav>
-
+              <li class="nav-item">
+                <a class="nav-link" href="#contatta">Contattami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Seguimi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 
 
