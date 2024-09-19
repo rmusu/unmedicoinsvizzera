@@ -12,6 +12,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script rel="stylesheet" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlJ92f6i6y0e5ITSV2h5F4PbHnN9BvUFQRSZt+tF1bp38KrIbbZXNx9Ld4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyFj0LAQFQclPbIc8WfK5eO3ROVfrn5Kec8F6GbtENy8A0u5r5g3a8L" crossorigin="anonymous"></script>
+
   <link href="css/styles.css" rel="stylesheet">
   <!--<link href="favicon.ico" rel="icon">-->
 </head>
@@ -42,9 +45,16 @@
             <li class="nav-item">
                 <a class="nav-link" id="firstMenu" href="#image">Chi sono</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="secondMenu" href="https://ilfrancesemedico.thinkific.com">I miei corsi</a>
-            </li>
+            <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="corsiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        I miei corsi
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="corsiDropdown">
+        <li><a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Corso 1</a></li>
+        <li><a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Corso 2</a></li>
+    </ul>
+</li>
+
             <li class="nav-item">
                 <a class="nav-link" id="thirdMenu" href="#contatta">Contattami</a>
             </li>
@@ -451,7 +461,7 @@ tempo e anche denaro.
       fifthParagraph: "Over the years, I learned to navigate the Swiss system and gained the experience necessary to help others understand the steps to come here.",
       question: "Are you planning to move to Switzerland? Do you need a tailored answer to your own situation?",
       consultancy: "Contact me for a 30 minute video call",
-      price: "The service fee is €100.",
+      price: "The service fee is €180.",
       formButton: "Go to the form",
       btnLng: "EN",
       ibaniTitle: "Our trusted partner",
@@ -470,7 +480,7 @@ tempo e anche denaro.
       fifthParagraph: "Tutte queste domande mi hanno spinto ad iniziare questo progetto, per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.",
       question: "Stai progettando di trasferirti in Svizzera? Hai bisogno di una risposta dettagliata per la tua situazione?",
       consultancy: "Contattami per una consulenza di 30 minuti in videochiamata.",
-      price: "il costo del servizio è di 100€.",
+      price: "il costo del servizio è di 180€.",
       formButton: "Vai al form",
       btnLng: "IT",
       ibaniTitle: "Il nostro partner di fiducia",
