@@ -3,15 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Un medico in Svizzera</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-...">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-..."></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-..."></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-..."></script>
+  <!-- Custom Styles -->
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -20,15 +24,16 @@
   <section id="title">
     <div class="container-fluid">
 
-      <!-- Nav Bar -->
+      <!-- Language Buttons -->
       <div class="btnLng">
         <button id="btnLngEN" onclick="changeLanguage('eng')">EN</button>
         <button id="btnLngIT" onclick="changeLanguage('it')">IT</button>
       </div>
 
+      <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="col-lg-6">
-          <img class="logo" src="images/logo.png" alt="iphone-mockup">
+          <img class="logo" src="images/logo.png" alt="Logo">
         </div>
 
         <div class="col-lg-3 collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -71,17 +76,26 @@
       <div class="col-md-6">
         <h4 class="chisono" id="firstParagraph">Ciao! Sono Stefano e lavoro come medico in Svizzera.</h4><br><br>
         <h4 class="chisono" id="secondParagraph">Dopo aver girato tra l’Europa e l’Africa, mi trovo da 7 anni a Ginevra.</h4><br><br>
-        <h4 class="chisono" id="thirdParagraph">Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.</h4>
+        <h4 class="chisono" id="thirdParagraph">Il sistema di formazione e il mondo lavorativo elvetico, così complicato da decifrare a primo impatto, è diventato per me un oggetto familiare.</h4>
       </div>
       <div class="col-sm-3"></div>
       <div class="diving col-sm-3">
-        <img id="image" src="images/ste-modified.png">
+        <img id="image" src="images/ste-modified.png" alt="Stefano">
       </div>
     </div>
     <div class="row">
       <div class="col-md-12 col-lg-6">
+        <br>
         <h4 class="chisono" id="fourthParagraph">
           Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <br>
+        <h4 class="chisono" id="fifthParagraph">
+          Tutte queste domande mi hanno spinto ad iniziare questo progetto, per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.
         </h4>
       </div>
     </div>
@@ -105,15 +119,74 @@
     <br>
     <div class="container">
       <div class="center">
-        <a href="https://us5.list-manage.com/contact-form?u=ec21434926e3563904dd6a452&form_id=a93cea29b0f9adb6dca3ec3715219bbd" target="_blank">
-          <button type="button" class="btn btn-danger">Vai al form</button>
+        <a style="text-decoration:none" href="https://us5.list-manage.com/contact-form?u=ec21434926e3563904dd6a452&form_id=a93cea29b0f9adb6dca3ec3715219bbd" target="_blank">
+          <button type="button" class="btn btn-danger" id="formButton">Vai al form</button>
         </a>
       </div>
     </div>
   </section>
 
+  <!-- Testimonials Section -->
+  <!-- Include your testimonials here -->
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-6">
+        <a style="text-decoration:none" href="https://www.instagram.com/unmedicoinsvizzera/">
+          <i class="icon1 fab fa-instagram fa-5x"></i>
+        </a>
+        <h3>Instagram</h3>
+      </div>
+      <div class="feature-box col-lg-6">
+        <a style="text-decoration:none" href="https://www.youtube.com/channel/UC3RS3zXa8CjFlPhwh70QPQQ/featured">
+          <i class="icon2 fab fa-youtube fa-5x"></i>
+        </a>
+        <h3>YouTube</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Section -->
+  <section id="ibani-partner">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 id="ibaniTitle">Il nostro partner di fiducia</h2>
+        <a href="https://www.ibani.com/" target="_blank">
+          <img src="images/logoibani.png" alt="IBANI logo" class="ibani-logo">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>© Copyright 2022 | Un medico in Svizzera</p>
+  </footer>
+
   <!-- JavaScript for Language Switching -->
   <script>
+    // Get elements from the DOM
+    var ibaniTitle = document.getElementById('ibaniTitle');
+    var firstMenu = document.getElementById('firstMenu');
+    var corsiDropdown = document.getElementById('corsiDropdown');
+    var thirdMenu = document.getElementById('thirdMenu');
+    var fourthMenu = document.getElementById('fourthMenu');
+    var foresight = document.getElementById('foresight');
+    var keys = document.getElementById('keys');
+    var firstParagraph = document.getElementById('firstParagraph');
+    var secondParagraph = document.getElementById('secondParagraph');
+    var thirdParagraph = document.getElementById('thirdParagraph');
+    var fourthParagraph = document.getElementById('fourthParagraph');
+    var fifthParagraph = document.getElementById('fifthParagraph');
+    var question = document.getElementById('question');
+    var consultancy = document.getElementById('consultancy');
+    var price = document.getElementById('price');
+    var formButton = document.getElementById('formButton');
+    var btnLngEN = document.getElementById('btnLngEN');
+    var btnLngIT = document.getElementById('btnLngIT');
+
+    // Function to change language
     function changeLanguage(lang) {
       location.hash = lang;
       location.reload();
@@ -122,7 +195,7 @@
     var language = {
       eng: {
         firstMenu: "About",
-        secondMenu: "Courses",
+        corsiDropdown: "Courses",
         thirdMenu: "Contact me",
         fourthMenu: "Follow me",
         foresight: "FORESIGHT AND PLANNING,",
@@ -131,70 +204,61 @@
         secondParagraph: "After traveling across Europe and Africa, I've been in Geneva for 7 years.",
         thirdParagraph: "The Swiss training system and work environment, initially difficult to understand, have become familiar to me.",
         fourthParagraph: "Over the years, many colleagues have asked me for advice and opinions on life as a doctor abroad, how to find a job as a doctor in Switzerland, and especially how to pursue specialization in this country.",
+        fifthParagraph: "All these questions led me to start this project, to offer answers to those who see Switzerland as a destination for their professional life and beyond.",
         question: "Are you planning to move to Switzerland? Do you need a detailed answer for your situation?",
         consultancy: "Contact me for a 30-minute video consultation",
         price: "The service costs €180.",
         formButton: "Go to form",
         btnLng: "EN",
+        ibaniTitle: "Our trusted partner",
       },
       it: {
         firstMenu: "Chi sono",
-        secondMenu: "I miei corsi",
+        corsiDropdown: "I miei corsi",
         thirdMenu: "Contattami",
         fourthMenu: "Seguimi",
         foresight: "Lungimiranza e programmazione,",
         keys: "le chiavi per il tuo successo in Svizzera",
         firstParagraph: "Ciao! Sono Stefano e lavoro come medico in Svizzera.",
         secondParagraph: "Dopo aver girato tra l’Europa e l’Africa, mi trovo da 7 anni a Ginevra.",
-        thirdParagraph: "Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.",
+        thirdParagraph: "Il sistema di formazione e il mondo lavorativo elvetico, così complicato da decifrare a primo impatto, è diventato per me un oggetto familiare.",
         fourthParagraph: "Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.",
+        fifthParagraph: "Tutte queste domande mi hanno spinto ad iniziare questo progetto, per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.",
         question: "Stai progettando di trasferirti in Svizzera? Hai bisogno di una risposta dettagliata per la tua situazione?",
         consultancy: "Contattami per una consulenza di 30 minuti in videochiamata.",
         price: "Il costo del servizio è di 180€.",
         formButton: "Vai al form",
         btnLng: "IT",
+        ibaniTitle: "Il nostro partner di fiducia",
       }
     };
 
-    // Function to switch content based on language
+    // Function to update content based on language
     if (window.location.hash) {
-      var selectedLanguage = window.location.hash.substring(1); // Remove the '#' from hash
-      if (selectedLanguage === "eng") {
-        firstMenu.textContent = language.eng.firstMenu;
-        secondMenu.textContent = language.eng.secondMenu;
-        thirdMenu.textContent = language.eng.thirdMenu;
-        fourthMenu.textContent = language.eng.fourthMenu;
-        foresight.textContent = language.eng.foresight;
-        keys.textContent = language.eng.keys;
-        firstParagraph.textContent = language.eng.firstParagraph;
-        secondParagraph.textContent = language.eng.secondParagraph;
-        thirdParagraph.textContent = language.eng.thirdParagraph;
-        fourthParagraph.textContent = language.eng.fourthParagraph;
-        question.textContent = language.eng.question;
-        consultancy.textContent = language.eng.consultancy;
-        price.textContent = language.eng.price;
-        formButton.textContent = language.eng.formButton;
-        btnLngEN.textContent = language.eng.btnLng;
-      } else {
-        firstMenu.textContent = language.it.firstMenu;
-        secondMenu.textContent = language.it.secondMenu;
-        thirdMenu.textContent = language.it.thirdMenu;
-        fourthMenu.textContent = language.it.fourthMenu;
-        foresight.textContent = language.it.foresight;
-        keys.textContent = language.it.keys;
-        firstParagraph.textContent = language.it.firstParagraph;
-        secondParagraph.textContent = language.it.secondParagraph;
-        thirdParagraph.textContent = language.it.thirdParagraph;
-        fourthParagraph.textContent = language.it.fourthParagraph;
-        question.textContent = language.it.question;
-        consultancy.textContent = language.it.consultancy;
-        price.textContent = language.it.price;
-        formButton.textContent = language.it.formButton;
-        btnLngIT.textContent = language.it.btnLng;
+      var lang = window.location.hash.substring(1);
+      if (language[lang]) {
+        var langData = language[lang];
+        firstMenu.textContent = langData.firstMenu;
+        corsiDropdown.textContent = langData.corsiDropdown;
+        thirdMenu.textContent = langData.thirdMenu;
+        fourthMenu.textContent = langData.fourthMenu;
+        foresight.textContent = langData.foresight;
+        keys.textContent = langData.keys;
+        firstParagraph.textContent = langData.firstParagraph;
+        secondParagraph.textContent = langData.secondParagraph;
+        thirdParagraph.textContent = langData.thirdParagraph;
+        fourthParagraph.textContent = langData.fourthParagraph;
+        fifthParagraph.textContent = langData.fifthParagraph;
+        question.textContent = langData.question;
+        consultancy.textContent = langData.consultancy;
+        price.textContent = langData.price;
+        formButton.textContent = langData.formButton;
+        btnLngEN.textContent = langData.btnLng;
+        btnLngIT.textContent = langData.btnLng;
+        ibaniTitle.textContent = langData.ibaniTitle;
       }
     }
   </script>
 
 </body>
-
 </html>
