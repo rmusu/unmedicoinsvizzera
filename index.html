@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Un medico in Svizzera</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script rel="stylesheet" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link href="css/styles.css" rel="stylesheet">
-  <!--<link href="favicon.ico" rel="icon">-->
 </head>
 
 <body>
@@ -21,509 +20,181 @@
   <section id="title">
     <div class="container-fluid">
 
-    <!-- Nav Bar -->
-    <div class="btnLng">
-
-    <button id="btnLngEN" onclick="changeLanguage('eng')">
-      EN
-    </button>
-    <button id="btnLngIT" onclick="changeLanguage('it')">
-      IT
-    </button>
-  </div>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="col-lg-6">
-        <img class="logo" src="images/logo.png" alt="iphone-mockup">
+      <!-- Nav Bar -->
+      <div class="btnLng">
+        <button id="btnLngEN" onclick="changeLanguage('eng')">EN</button>
+        <button id="btnLngIT" onclick="changeLanguage('it')">IT</button>
       </div>
 
-      <div class="col-lg-3 collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
-        <ul id = main_menu class="navbar-nav ml-auto">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="col-lg-6">
+          <img class="logo" src="images/logo.png" alt="iphone-mockup">
+        </div>
 
+        <div class="col-lg-3 collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul id="main_menu" class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" id="firstMenu" href="#image">Chi sono</a>
+              <a class="nav-link" id="firstMenu" href="#image">Chi sono</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="corsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  I miei corsi
-                </a>
-                <div class="dropdown-menu" aria-labelledby="corsiDropdown">
-                  <a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Il Francese Medico</a>
-                  <a class="dropdown-item" href="https://unmedicoinsvizzera-cv.thinkific.com">CV & Lettera Motivazionale</a>
-                </div>
-              </li>
-            <li class="nav-item">
-                <a class="nav-link" id="thirdMenu" href="#contatta">Contattami</a>
+              <a class="nav-link dropdown-toggle" href="#" id="corsiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                I miei corsi
+              </a>
+              <div class="dropdown-menu" aria-labelledby="corsiDropdown">
+                <a class="dropdown-item" href="https://ilfrancesemedico.thinkific.com">Il Francese Medico</a>
+                <a class="dropdown-item" href="https://unmedicoinsvizzera-cv.thinkific.com">CV & Lettera Motivazionale</a>
+              </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="fourthMenu" href="#features">Seguimi</a>
+              <a class="nav-link" id="thirdMenu" href="#contatta">Contattami</a>
             </li>
-        </ul>
-
-     </div>
-    </nav>
-
-
-
-
-
-
-    <!-- Title -->
-
-    <div class="row">
-
-
-
-      <div class="col-md-12">
-        <h1 id="foresight">Lungimiranza e programmazione,</h1><h2 id="keys">le chiavi per il tuo successo in Svizzera</h2>
-
-
-      </div>
-
-
-  </section>
-
-
-
-  <section id="Aboutme" class="c">
-
-    <div class="row">
-
-      <div class="col-md-6">
-        <h4 class="chisono" id="firstParagraph">Ciao! Sono Stefano e lavoro come medico in Svizzera.</h4><br><br> <h4 class="chisono" id="secondParagraph">Dopo aver girato tra l’Europa e l’Africa, mi trovo da 7 anni a Ginevra.</h4><br><br>
-          <h4 class="chisono" id="thirdParagraph">Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.</h4>
+            <li class="nav-item">
+              <a class="nav-link" id="fourthMenu" href="#features">Seguimi</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-sm-3"></div>
-          <div class="diving col-sm-3"><img id="image" src="images/ste-modified.png">
-          </div>
-
-        </div>
-            <div class="row">
-              <div class="col-md-12 col-lg-6">
-                <br><h4 class="chisono" id="fourthParagraph">
-                  Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.</h4>
-                </div>
-                <div class="col-md-0 col-lg-6"></div>
-                <div class="col-md-0 col-lg-6" ></div>
-          </div>
-
-
-
-          <div class="row">
-
-            <div class="col-md-12 col-lg-6">
-        <br><h4 class="chisono" id="fifthParagraph">
-
-          Tutte queste domande mi hanno spinto ad iniziare questo progetto,
-          per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.<br>
-
-        </h4>
-
-      </div>
-        </div>
-    </section>
-
-  <!--  <div class="row">
-      <div class="col-lg-3">
-
-      </div>
-      <div class="col-lg-6">
-      <form action="/" method="POST">
-
-      <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-      <div class="col-lg-3">
-      <button type="submit" class="btn btn-danger">Inizia ora</button>
-      </div>
-      </form>
-
+      </nav>
     </div>
   </section>
 
-
-   Begin Mailchimp Signup Form
-  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-  <style type="text/css">
-  	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-  	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  </style>
-  <div id="mc_embed_signup">
-  <form action="https://gmail.us5.list-manage.com/subscribe/post?u=ec21434926e3563904dd6a452&amp;id=3b1a1b8e98" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-  	<h2>Subscribe</h2>
-  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-  <div class="mc-field-group">
-  	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-  </label>
-  	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-  </div>
-  	<div id="mce-responses" class="clear">
-  		<div class="response" id="mce-error-response" style="display:none"></div>
-  		<div class="response" id="mce-success-response" style="display:none"></div>
-  	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups
-      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ec21434926e3563904dd6a452_3b1a1b8e98" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      </div>
-  </form>
-  </div>
-  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday'; /*
-   * Translated default messages for the $ validation plugin.
-   * Locale: IT
-   */
-  $.extend($.validator.messages, {
-         required: "Campo obbligatorio.",
-         remote: "Controlla questo campo.",
-         email: "Inserisci un indirizzo email valido.",
-         url: "Inserisci un indirizzo web valido.",
-         date: "Inserisci una data valida.",
-         dateISO: "Inserisci una data valida (ISO).",
-         number: "Inserisci un numero valido.",
-         digits: "Inserisci solo numeri.",
-         creditcard: "Inserisci un numero di carta di credito valido.",
-         equalTo: "Il valore non corrisponde.",
-         accept: "Inserisci un valore con un&apos;estensione valida.",
-         maxlength: $.validator.format("Non inserire pi&ugrave; di {0} caratteri."),
-         minlength: $.validator.format("Inserisci almeno {0} caratteri."),
-         rangelength: $.validator.format("Inserisci un valore compreso tra {0} e {1} caratteri."),
-         range: $.validator.format("Inserisci un valore compreso tra {0} e {1}."),
-         max: $.validator.format("Inserisci un valore minore o uguale a {0}."),
-         min: $.validator.format("Inserisci un valore maggiore o uguale a {0}.")
-  });}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
-  <!--End mc_embed_signup-->
-
-  <!-- Features -->
-
-
-<section id="contatta">
+  <!-- Title Section -->
   <div class="row">
-
-    <div class="col-sm-12">
-
-          <h2 id="question">Stai progettando di trasferirti in Svizzera? <br>Hai bisogno di una
-          risposta dettagliata per la tua situazione?</h2>
-
-
+    <div class="col-md-12">
+      <h1 id="foresight">Lungimiranza e programmazione,</h1>
+      <h2 id="keys">le chiavi per il tuo successo in Svizzera</h2>
     </div>
   </div>
-  <br>
+
+  <!-- About Me Section -->
+  <section id="Aboutme" class="c">
     <div class="row">
-
-      <div class="col-sm-12">
-
-
-            <h1 class="videochiamata" id="consultancy">Contattami per una consulenza di 30 minuti in videochiamata</h1>
-            <br>
-            <p class="costo" id="price">il costo del servizio è di 180€</p>
-
+      <div class="col-md-6">
+        <h4 class="chisono" id="firstParagraph">Ciao! Sono Stefano e lavoro come medico in Svizzera.</h4><br><br>
+        <h4 class="chisono" id="secondParagraph">Dopo aver girato tra l’Europa e l’Africa, mi trovo da 7 anni a Ginevra.</h4><br><br>
+        <h4 class="chisono" id="thirdParagraph">Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.</h4>
       </div>
+      <div class="col-sm-3"></div>
+      <div class="diving col-sm-3">
+        <img id="image" src="images/ste-modified.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <h4 class="chisono" id="fourthParagraph">
+          Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.
+        </h4>
+      </div>
+    </div>
+  </section>
 
-  </div>
-
-  <br>
+  <!-- Contact Section -->
+  <section id="contatta">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 id="question">Stai progettando di trasferirti in Svizzera? <br>Hai bisogno di una risposta dettagliata per la tua situazione?</h2>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="videochiamata" id="consultancy">Contattami per una consulenza di 30 minuti in videochiamata</h1>
+        <br>
+        <p class="costo" id="price">Il costo del servizio è di 180€</p>
+      </div>
+    </div>
+    <br>
     <div class="container">
       <div class="center">
-        <a style="text-decoration:none" href= "https://us5.list-manage.com/contact-form?u=ec21434926e3563904dd6a452&form_id=a93cea29b0f9adb6dca3ec3715219bbd"><button type="button" class="btn btn-danger" color="red" id="formButton">Vai al form</button></a>
+        <a href="https://us5.list-manage.com/contact-form?u=ec21434926e3563904dd6a452&form_id=a93cea29b0f9adb6dca3ec3715219bbd" target="_blank">
+          <button type="button" class="btn btn-danger">Vai al form</button>
+        </a>
       </div>
     </div>
-</div>
+  </section>
 
-<section id="testimonials">
-
-  <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-
-            <h4>
-Ho contattato Stefano per una consulenza e ho ricevuto risposta in tempi molto rapidi e
-abbiamo subito fissato un colloquio che è stato estremamente utile e proficuo.
-Stefano ha risposto a tutte le mie domande in modo estremamente chiaro, esaustivo ed
-obiettivo. Consiglio fortemente dopo aver visto i suoi video di fare una consulenza con lui in
-privato, poiché è possibile porgergli tutte quelle domande di natura anche più personale. É
-stato, inoltre, in grado di aiutarmi a fugare ogni dubbio o timore nei confronti di una scelta
-che rappresenta un cambio di vita.
-Stefano, inoltre, è stato così gentile da elencarmi una serie di cliniche ed ospedali, attinenti
-alla specialistica che mi interessa, ai quali inviare una candidatura spontanea come medico
-assistente.</h4>
-            <img class="testimonial-image" src="images/Filippo_C.jpg" alt="dog-profile">
-            <em>Filippo C.</em>
-        </div>
-        <div class="carousel-item">
-            <h4 class="testimonial-text">
-Ho contattato Stefano per una consulenza e ho ricevuto risposta in tempi molto rapidi e
-abbiamo subito fissato un colloquio che è stato estremamente utile e proficuo.
-Stefano ha risposto a tutte le mie domande in modo estremamente chiaro, esaustivo ed
-obiettivo. Consiglio fortemente dopo aver visto i suoi video di fare una consulenza con lui in
-privato, poiché è possibile porgergli tutte quelle domande di natura anche più personale. É
-stato, inoltre, in grado di aiutarmi a fugare ogni dubbio o timore nei confronti di una scelta
-che rappresenta un cambio di vita.
-Stefano, inoltre, è stato così gentile da elencarmi una serie di cliniche ed ospedali, attinenti
-alla specialistica che mi interessa, ai quali inviare una candidatura spontanea come medico
-assistente.</h4>
-            <img class="testimonial-image" src="images/Erik_G.jpg" alt="lady-profile">
-            <em>Erik G.</em>
-        </div>
-        <div class="carousel-item">
-        <h4 class="testimonial-text">
-
-          Il colloquio con Stefano è stata un'esperienza molto più che positiva. Ho visto tutti i suoi
-video almeno 2 volte. È stato come parlare con un consulente bancario di fiducia che vuole
-concederti un mutuo ma che ti aiuta per davvero. Super professionale ma allo stesso tempo
-familiare. Ha analizzato la mia situazione, i miei punti di forza e le mie debolezze,
-guidandomi per scrivere le mie candidature. Grazie ai suoi consigli ho ottenuto il primo
-colloquio di lavoro. Lo consiglio veramente a tutti.</h4>
-
-        <em>Federico L.</em>
-    </div>
-    <div class="carousel-item">
-    <h4 class="testimonial-text">
-
-      L'approccio alla specialità è di per sé un momento complesso e tante sono le cose alle quali
-l'Università non ci prepara, se poi si pensa di svolgerla all'estero la situazione si complica
-ulteriormente. L'incontro con Stefano mi ha chiarito completamente il percorso da seguire
-per accedere ad una specialità in Svizzera, oltre a ciò che aspettarmi una volta lì. Molto 
-preparato per quanto riguarda la parte burocratica, mi ha saputo fornire nomi di enti e liste di
-documenti , con tempistiche previste. Non potrei raccomandarvelo di più.</h4>
-
-    <em>Giorgia G.</em>
-</div>
-        <div class="carousel-item">
-            <h4 class="testimonial-text">
-
-              Ho richiesto una consulenza con Stefano perché avevo difficoltà con la richiesta di
-  riconoscimento di un periodo di specializzazione svolto all‘estero. Stefano è stato molto
-  disponibile e siamo riusciti a organizzare un appuntamento nel giro di pochissimo tempo. La
-  consulenza si é svolta in videochiamata e così ho avuto la possibilità di chiarire i miei dubbi
-  e di avviare direttamente con lui la procedura sul Logbuch online. La mia esperienza è stata
-  molto positiva: con professionalità, competenza e gentilezza Stefano è stato capace di
-  aiutarmi nell’ardua impresa di far riconoscere il mio percorso di specializzazione in Svizzera.
-  Assolutamente consigliato!</h4>
-
-            <em>Laura C.</em>
-        </div>
-        <div class="carousel-item">
-            <h4 class="testimonial-text">
-
-              Stefano’s videos on YouTube were helpful for my research on how to work as a medical doctor in Switzerland.
-              Therefore, I felt confident booking a consultation, and it was great!
-              He was professional and comprehensive, covering all my questions and giving important additional pieces of advice.</h4>
-
-            <em>Estevão M.</em>
-        </div>
-        <div class="carousel-item">
-            <h4 class="testimonial-text">
-
-            Consiglio vivamente una consulenza con Stefano poiché è in grado di rispondere in modo
-            sintetico, preciso ed esaustivo ai quesiti sul percorso da compiere per diventare medico in
-            questo Paese. Ora ho le idee molto più chiare sui prossimi passi. Grazie!</h4>
-
-            <em>Francesca S.</em>
-        </div>
-
-        <div class="carousel-item">
-            <h4 class="testimonial-text">
-
-              Consiglio a tutti coloro che vogliono spostarsi in Svizzera e, come me, hanno molti dubbi e
-  domande, di sfruttare questo servizio di consulenza. Stefano è molto preparato e preciso,
-  assolutamente disponibile e molto cordiale, in grado di rispondere ad ogni domanda
-  illustrando bene i Pro e i Contro di questa scelta.</h4>
-
-            <em>Arianna L.</em>
-        </div>
-
-        <div class="carousel-item">
-            <h4 class="testimonial-text">
-
-              The consultation with Dr Musumeci helped me to correctly assess my hypothetical career path in Switzerland,
-              weighing up the positives and negatives of each of my questions.
-              He proved to be helpful, competent and patient. For this I thank him very much.
-</h4>
-
-            <em>Sebastiano D.F.</em>
-        </div>
-
-        <div class="carousel-item">
-          <h4 class="testimonial-text">
-
-            Ho contattato Stefano per avere delle risposte precise sui miei dubbi riguardo una possibile
-carriera in Svizzera dopo la specializzazione. Stefano è riuscito a capire in pochissimo
-tempo di cosa avevo bisogno e ha indirizzato la conversazione in modo da delineare una
-roadmap specifica per il mio caso. Consiglio questo servizio di consulenza a chiunque voglia
-intraprendere un percorso in Svizzera senza incappare in errori che possono costare molto
-tempo e anche denaro.
-</h4>
-
-          <em>Daniele B.</em>
-      </div>
-
-
-      </div>
-      <a class="carousel-control-prev" href="#testimonial-carousel" role="button"  data-slide="prev">
-       <span class="carousel-control-prev-icon"></span>
-     </a>
-      <a class="carousel-control-next" href="#testimonial-carousel" role="button"  data-slide="next">
-       <span class="carousel-control-next-icon"></span>
-     </a>
-    </div>
-</section>
-</section>
-
-
-  <section id="features">
-    <div class="row">
-
-      <div class="feature-box col-lg-6">
-      <a style="text-decoration:none" href = "https://www.instagram.com/unmedicoinsvizzera/"><i class="icon1 fab fa-instagram fa-5x"></i></a>
-            <h3>Instagram</h3>
-      </div>
-
-      <div class="feature-box col-lg-6">
-
-      <a style="text-decoration:none" href = "https://www.youtube.com/channel/UC3RS3zXa8CjFlPhwh70QPQQ/featured"><i class="icon2 fab fa-youtube fa-5x"></i></a>
-            <h3>YouTube</h3>
-      </div>
-    </section>
-
-  <!--    <div class="feature-box col-lg-4">
-      <i class="icon fas fa-bullseye fa-3x "></i>
-            <h3>Udemy</h3>
-            <p>Il francese medico: arriva preparato al tuo primo giorno in reparto!</p>
-      </div>
--->
-
-
-<!-- ...il resto del tuo codice HTML... -->
-
-<section id="ibani-partner">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h2 id="ibaniTitle">Our trusted partner</h2>
-      <a href="https://www.ibani.com/" target="_blank">
-        <!-- Set the smaller logo size and margin with CSS -->
-        <img src="images/logoibani.png" alt="IBANI logo" class="ibani-logo">
-      </a>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Footer -->
-<footer id="footer">
-
-  <p>© Copyright 2022 | Un medico in Svizzera</p>
-</footer>
-
-
-<!-- Script JavaScript -->
-<script>
-  // Ottieni gli elementi dal DOM
-  var ibaniTitle = document.getElementById('ibaniTitle');
-  var firstMenu = document.getElementById('firstMenu');
-  var secondMenu = document.getElementById('secondMenu');
-  var thirdMenu = document.getElementById('thirdMenu');
-  var fourthMenu = document.getElementById('fourthMenu');
-  var foresight = document.getElementById('foresight');
-  var keys = document.getElementById('keys');
-  var firstParagraph = document.getElementById('firstParagraph');
-  var secondParagraph = document.getElementById('secondParagraph');
-  var thirdParagraph = document.getElementById('thirdParagraph');
-  var fourthParagraph = document.getElementById('fourthParagraph');
-  var fifthParagraph = document.getElementById('fifthParagraph');
-  var question = document.getElementById('question');
-  var consultancy = document.getElementById('consultancy');
-  var price = document.getElementById('price');
-  var formButton = document.getElementById('formButton');
-  var btnLngEN = document.getElementById('btnLngEN');
-  var btnLngIT = document.getElementById('btnLngIT');
-
-  // La tua funzione per cambiare lingua
-  function changeLanguage(lang) {
-    location.hash = lang;
-    location.reload();
-  }
-
-  var language = {
-    eng: {
-      firstMenu: "About",
-      secondMenu: "Courses",
-      thirdMenu: "Contact me",
-      fourthMenu: "Follow me",
-      foresight: "FORESIGHT AND PLANNING,",
-      keys: "The keys to your success in Switzerland",
-      firstParagraph: "Ciao! Buongiorno a tutti! I’m Stefano. I work as a doctor in Switzerland.",
-      secondParagraph: "So many colleagues over the past years have asked me for advice and personal opinions about my life as a doctor abroad, how to find a job as a doctor in Switzerland and especially, how to start the medical residency program in this country.",
-      thirdParagraph: "After several experiences around Europe and Africa, right now I’m based in Geneva since 2018.",
-      fourthParagraph: "At first glance, the Swiss medical residency program and its working environment are extremely complicated to understand.",
-      fifthParagraph: "Over the years, I learned to navigate the Swiss system and gained the experience necessary to help others understand the steps to come here.",
-      question: "Are you planning to move to Switzerland? Do you need a tailored answer to your own situation?",
-      consultancy: "Contact me for a 30 minute video call",
-      price: "The service fee is €180.",
-      formButton: "Go to the form",
-      btnLng: "EN",
-      ibaniTitle: "Our trusted partner",
-    },
-    it: {
-      firstMenu: "Chi sono",
-      secondMenu: "I miei corsi",
-      thirdMenu: "Contattami",
-      fourthMenu: "Seguimi",
-      foresight: "Lungimiranza e programmazione,",
-      keys: "le chiavi per il tuo successo in Svizzera",
-      firstParagraph: "Ciao! Sono Stefano e lavoro come medico in Svizzera.",
-      secondParagraph: "Dopo aver girato tra l’Europa e l’Africa, mi trovo da 7 anni a Ginevra.",
-      thirdParagraph: "Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.",
-      fourthParagraph: "Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.",
-      fifthParagraph: "Tutte queste domande mi hanno spinto ad iniziare questo progetto, per offrire il maggior numero di risposte a tutti coloro che vedono nella Svizzera una meta per la loro vita lavorativa e non solo.",
-      question: "Stai progettando di trasferirti in Svizzera? Hai bisogno di una risposta dettagliata per la tua situazione?",
-      consultancy: "Contattami per una consulenza di 30 minuti in videochiamata.",
-      price: "il costo del servizio è di 180€.",
-      formButton: "Vai al form",
-      btnLng: "IT",
-      ibaniTitle: "Il nostro partner di fiducia",
+  <!-- JavaScript for Language Switching -->
+  <script>
+    function changeLanguage(lang) {
+      location.hash = lang;
+      location.reload();
     }
-  };
 
-  // Funzione per aggiornare il contenuto in base alla lingua
-  if (window.location.hash) {
-    if (window.location.hash === "#eng") {
-      firstMenu.textContent = language.eng.firstMenu;
-      secondMenu.textContent = language.eng.secondMenu;
-      thirdMenu.textContent = language.eng.thirdMenu;
-      fourthMenu.textContent = language.eng.fourthMenu;
-      foresight.textContent = language.eng.foresight;
-      keys.textContent = language.eng.keys;
-      firstParagraph.textContent = language.eng.firstParagraph;
-      secondParagraph.textContent = language.eng.secondParagraph;
-      thirdParagraph.textContent = language.eng.thirdParagraph;
-      fourthParagraph.textContent = language.eng.fourthParagraph;
-      fifthParagraph.textContent = language.eng.fifthParagraph;
-      question.textContent = language.eng.question;
-      consultancy.textContent = language.eng.consultancy;
-      price.textContent = language.eng.price;
-      formButton.textContent = language.eng.formButton;
-      btnLngEN.textContent = language.eng.btnLng;
-      ibaniTitle.textContent = language.eng.ibaniTitle;
-    } else {
-      firstMenu.textContent = language.it.firstMenu;
-      secondMenu.textContent = language.it.secondMenu;
-      thirdMenu.textContent = language.it.thirdMenu;
-      fourthMenu.textContent = language.it.fourthMenu;
-      foresight.textContent = language.it.foresight;
-      keys.textContent = language.it.keys;
-      firstParagraph.textContent = language.it.firstParagraph;
-      secondParagraph.textContent = language.it.secondParagraph;
-      thirdParagraph.textContent = language.it.thirdParagraph;
-      fourthParagraph.textContent = language.it.fourthParagraph;
-      fifthParagraph.textContent = language.it.fifthParagraph;
-      question.textContent = language.it.question;
-      consultancy.textContent = language.it.consultancy;
-      price.textContent = language.it.price;
-      formButton.textContent = language.it.formButton;
-      btnLngIT.textContent = language.it.btnLng;
-      ibaniTitle.textContent = language.it.ibaniTitle;
+    var language = {
+      eng: {
+        firstMenu: "About",
+        secondMenu: "Courses",
+        thirdMenu: "Contact me",
+        fourthMenu: "Follow me",
+        foresight: "FORESIGHT AND PLANNING,",
+        keys: "The keys to your success in Switzerland",
+        firstParagraph: "Hello! I'm Stefano and I work as a doctor in Switzerland.",
+        secondParagraph: "After traveling across Europe and Africa, I've been in Geneva for 7 years.",
+        thirdParagraph: "The Swiss training system and work environment, initially difficult to understand, have become familiar to me.",
+        fourthParagraph: "Over the years, many colleagues have asked me for advice and opinions on life as a doctor abroad, how to find a job as a doctor in Switzerland, and especially how to pursue specialization in this country.",
+        question: "Are you planning to move to Switzerland? Do you need a detailed answer for your situation?",
+        consultancy: "Contact me for a 30-minute video consultation",
+        price: "The service costs €180.",
+        formButton: "Go to form",
+        btnLng: "EN",
+      },
+      it: {
+        firstMenu: "Chi sono",
+        secondMenu: "I miei corsi",
+        thirdMenu: "Contattami",
+        fourthMenu: "Seguimi",
+        foresight: "Lungimiranza e programmazione,",
+        keys: "le chiavi per il tuo successo in Svizzera",
+        firstParagraph: "Ciao! Sono Stefano e lavoro come medico in Svizzera.",
+        secondParagraph: "Dopo aver girato tra l’Europa e l’Africa, mi trovo da 7 anni a Ginevra.",
+        thirdParagraph: "Il sistema di formazione e il mondo lavorativo elvetico, cosi complicato da decifrare a primo impatto, é diventato per me un oggetto familiare.",
+        fourthParagraph: "Tanti colleghi in questi anni mi hanno chiesto consigli e opinioni sulla vita da medico all’estero, su come trovare lavoro da medico in Svizzera e in particolare su come fare la specializzazione in questo paese.",
+        question: "Stai progettando di trasferirti in Svizzera? Hai bisogno di una risposta dettagliata per la tua situazione?",
+        consultancy: "Contattami per una consulenza di 30 minuti in videochiamata.",
+        price: "Il costo del servizio è di 180€.",
+        formButton: "Vai al form",
+        btnLng: "IT",
+      }
+    };
+
+    // Function to switch content based on language
+    if (window.location.hash) {
+      var selectedLanguage = window.location.hash.substring(1); // Remove the '#' from hash
+      if (selectedLanguage === "eng") {
+        firstMenu.textContent = language.eng.firstMenu;
+        secondMenu.textContent = language.eng.secondMenu;
+        thirdMenu.textContent = language.eng.thirdMenu;
+        fourthMenu.textContent = language.eng.fourthMenu;
+        foresight.textContent = language.eng.foresight;
+        keys.textContent = language.eng.keys;
+        firstParagraph.textContent = language.eng.firstParagraph;
+        secondParagraph.textContent = language.eng.secondParagraph;
+        thirdParagraph.textContent = language.eng.thirdParagraph;
+        fourthParagraph.textContent = language.eng.fourthParagraph;
+        question.textContent = language.eng.question;
+        consultancy.textContent = language.eng.consultancy;
+        price.textContent = language.eng.price;
+        formButton.textContent = language.eng.formButton;
+        btnLngEN.textContent = language.eng.btnLng;
+      } else {
+        firstMenu.textContent = language.it.firstMenu;
+        secondMenu.textContent = language.it.secondMenu;
+        thirdMenu.textContent = language.it.thirdMenu;
+        fourthMenu.textContent = language.it.fourthMenu;
+        foresight.textContent = language.it.foresight;
+        keys.textContent = language.it.keys;
+        firstParagraph.textContent = language.it.firstParagraph;
+        secondParagraph.textContent = language.it.secondParagraph;
+        thirdParagraph.textContent = language.it.thirdParagraph;
+        fourthParagraph.textContent = language.it.fourthParagraph;
+        question.textContent = language.it.question;
+        consultancy.textContent = language.it.consultancy;
+        price.textContent = language.it.price;
+        formButton.textContent = language.it.formButton;
+        btnLngIT.textContent = language.it.btnLng;
+      }
     }
-  }
-</script>
+  </script>
+
 </body>
-</html>
 
+</html>
